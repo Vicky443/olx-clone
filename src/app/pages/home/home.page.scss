@@ -1,0 +1,65 @@
+.searchbar-input.sc-ion-searchbar-md {
+    --box-shadow:  none !important;
+    border: 4px solid #4c0949;
+}
+
+ion-card {   
+    position: relative;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid rgba(0,47,52,.2);
+    overflow: hidden;
+    box-shadow: 0 !important;
+    -webkit-box-shadow: none !important;
+    }
+
+    .item-details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        position: relative;
+        padding: 8px;
+    }
+
+    .item-price {
+        font-weight: 700;
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #002f34;
+        font-size: 20px;
+    }
+
+    .item-title { 
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 5px;
+    }
+
+    .item-location-flex {
+        display: flex;
+        margin-top: auto;
+        justify-content: space-between;
+        text-transform: uppercase;
+        color: rgba(0,47,52,.64);
+        font-size: 10px;
+    }
+   
+
+    .item-time-line { 
+        text-transform: uppercase;
+        margin-left: auto;
+        color: rgba(0,47,52,.64);
+        font-size: 10px;
+    }
+
+    .head-label {
+        font-size: 18px;
+      }
