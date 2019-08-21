@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs-page';
-import { TutorialPage } from '../tutorial/tutorial';
+import { SchedulePage } from '../schedule/schedule';
 
 
 const routes: Routes = [
@@ -14,7 +14,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            component: TutorialPage,
+            component: SchedulePage,
           },
           {
             path: 'session/:sessionId',

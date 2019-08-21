@@ -1,0 +1,115 @@
+.ll42F .XvGG0 ._1GHIC {
+  position: relative;
+  max-width: calc(100vw - 32px);
+}
+
+.ll42F ._1GHIC {
+  display: flex;
+  padding: 1px;
+}
+
+._3Hxl1 .jzfhp {
+  overflow: auto;
+  text-align: center;
+  flex: 1;
+}
+
+.ll42F {
+  min-height: 48px;
+}
+
+.ll42F ._7WB9d ._1GHIC {
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  position: absolute;
+}
+
+.ll42F ._2KjKn ._1cN1T {
+  border: 1px solid #2a65ea;
+  outline: 1px solid #2a65ea;
+  background: #ebf2ff;
+  color: #2a65ea;
+}
+
+.ll42F ._7WB9d ._1GHIC ._2KjKn {
+  flex: 0 0 auto;
+}
+
+.ll42F .XvGG0 ._1GHIC ._2KjKn {
+  width: 100px;
+  padding: 16px 8px;
+}
+
+.ll42F ._2KjKn {
+  min-height: 48px;
+  border: 1px solid rgba(0, 47, 52, .64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  color: rgba(0, 47, 52, .64);
+  font-size: 14px;
+  transition-duration: .5s;
+  transition-property: color, border, background;
+  transition-timing-function: cubic-bezier(0, 1, .5, 1);
+}
+
+.ll42F ._2KjKn input {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.price-filter {
+  align-items: center;
+  display: flex;
+  padding: 16px 0;
+}
+
+.price-filter .price-to {
+  flex: 1;
+  text-align: center;
+}
+
+.price-div {
+  background: #ebeeef;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.price-span {
+  position: absolute;
+  font-size: 14px;
+  width: 32px;
+  pointer-events: none;
+}
+
+.price-filter input {
+  background: none;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 47, 52, .64);
+  box-sizing: border-box;
+  padding: 0 32px;
+  font-size: 14px;
+  text-align: center;
+}

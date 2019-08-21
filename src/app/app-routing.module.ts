@@ -32,7 +32,9 @@ const routes: Routes = [
     path: 'tutorial',
     loadChildren: () => import('./pages/tutorial/tutorial.module').then(m => m.TutorialModule),
     canLoad: [CheckTutorial]
-  }
+  },  { path: 'filter', loadChildren: './pages/filter/filter.module#FilterPageModule' },
+  { path: 'product-details', loadChildren: './pages/product-details/product-details.module#ProductDetailsPageModule' }
+
 
 ];
 

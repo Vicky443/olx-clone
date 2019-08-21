@@ -1,0 +1,154 @@
+<ion-header no-border>
+  <ion-toolbar no-border>
+    <ion-buttons slot="start" (click)="dismiss()" >
+      <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="share"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="pimary">
+  <div class="about-header">
+    <label class="featured"><span>Featured</span></label>
+    <ion-slides pager="true">
+      <ion-slide>
+        <img style="background-size:cover"
+          src="https://apollo-singapore.akamaized.net/v1/files/8vae5j4ac0241-IN/image;s=1080x1080">
+      </ion-slide>
+      <ion-slide>
+        <img style="background-size:cover"
+          src="https://apollo-singapore.akamaized.net/v1/files/00x4fj5fzr811-IN/image;s=1080x1080" />
+      </ion-slide>
+
+      <ion-slide>
+        <img style="background-size:cover"
+          src="https://apollo-singapore.akamaized.net/v1/files/y0x6lw732kcj-IN/image;s=1080x1080" />
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="about-info">
+    <ion-card fullscreen class="ion-card-cust">
+      <ion-card-header>
+        <ion-card-title>{{ 1200 | currency : 'INR' }} <span style="float: right">
+            <ion-buttons slot="end">
+              <ion-icon slot="icon-only" style="font-size: 25px;" name="heart" small></ion-icon>
+            </ion-buttons>
+          </span> </ion-card-title>
+        <ion-card-subtitle style="color: #2f5559"> Maruti Sizuki Swift Dzire VDI, 2012, Diesel</ion-card-subtitle>
+        <ion-card-subtitle> 2014 - 71000 Km</ion-card-subtitle>
+        <ion-card-subtitle style="font-size: 10px;">
+          <span>
+            <ion-buttons slot="start">
+              <ion-icon slot="icon-only" style="font-size: 12px;" name="pin" small></ion-icon> FATIMA NAGAR ,PUNE ,
+              MAHARSTRA
+            </ion-buttons>
+          </span>
+        </ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card>
+    <ion-card class="ion-card-cust">
+      <ion-card-header>
+        <ion-card-title>
+          Details
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="p-details">
+          <div class="p-head">
+            <span class="p-left">Brand</span>
+            <span class="p-right">BMW</span>
+          </div>
+        </div>
+        <div class="p-details">
+          <div class="p-head">
+            <span class="p-left">Model</span>
+            <span class="p-right">I20</span>
+          </div>
+        </div>
+        <div class="p-details">
+          <div class="p-head">
+            <span class="p-left">Year</span>
+            <span class="p-right">2015</span>
+          </div>
+        </div>
+        <div class="p-details">
+          <div class="p-head">
+            <span class="p-left">Feal</span>
+            <span class="p-right">Diesel</span>
+          </div>
+        </div>
+        <div class="p-details">
+          <div class="p-head">
+            <span class="p-left">KM Driven</span>
+            <span class="p-right">74,250 Km</span>
+          </div>
+        </div>
+        <div class="p-details">
+          <div class="p-head">
+            <span class="p-left">Brand</span>
+            <span class="p-right">BMW</span>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-card-cust">
+      <ion-card-header>
+        <ion-card-title>
+          Description
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Office space for rent on 1st floor (facing rodside) with ample car park. Opposite mathrubhumi just on the left
+        hand side of the entrance of azad road. plz contact 9.7.4.6.2.One.1.0.2.2.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="ion-card-cust">
+      <ion-list lines="none">
+        <ion-item button>
+          <ion-avatar slot="start" class="item-avatar">
+            <img src="assets/img/avatar/avatar.svg">
+          </ion-avatar>
+          <ion-label>
+            <h2> <strong> HAPPY GAMING WORLD </strong> </h2>
+            <span class="member-small">Member Since June 2016</span>
+            <p> <a href="#" class="view-profile"> VIEW PROFILE </a> </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+
+    <ion-card class="ion-card-cust">
+      <ion-card-header>
+        <ion-card-title>
+          Related Ads
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+      </ion-card-content>
+    </ion-card>
+
+
+  </div>
+</ion-content>
+
+
+
+<ion-footer no-border no-padding>
+  <ion-row>
+    <ion-col no-padding>
+      <ion-button mode="ios" expand="full"> CHAT </ion-button>
+    </ion-col>
+    <ion-col no-padding>
+      <ion-button mode="ios" expand="full"> CALL </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

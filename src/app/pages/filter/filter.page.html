@@ -1,0 +1,94 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" (click)="dismiss()" name="close"></ion-icon>
+    </ion-buttons>
+    <ion-title>FILTERS</ion-title>
+  
+    <ion-buttons slot="end">
+    <ion-button color="primary">
+      CLEAR
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="end" name="ios-arrow-forward"></ion-icon>
+      <ion-label>
+        <strong> Categories </strong>
+        <br /> <span style="font-size: 14px"> Motorcycles </span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="ios-arrow-forward"></ion-icon>
+      <ion-label>
+        <strong> Location </strong>
+        <br /> <span style="font-size: 14px"> India </span>
+      </ion-label>
+
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="ios-arrow-forward"></ion-icon>
+      <ion-label>
+        <strong> Brand and Model </strong>
+        <br /> <span style="font-size: 14px"> View All </span>
+      </ion-label>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-label>
+        <strong> Price </strong>
+        <div class="price-filter">
+          <div class="price-div">
+            <span class="price-span">₹</span>
+            <input type="text" placeholder="0" data-aut-id="minInput" value="230000">
+          </div>
+          <span class="price-to"><span>to</span></span>
+          <div class="price-div"><span class="price-span">₹</span><input type="text" placeholder="1000000+"
+              data-aut-id="maxInput" value="840000"></div>
+        </div>
+        <div>
+          <ion-range mode="ios" min="0" max="100" step="20" value="80" dual-knobs pin color="primary">
+          </ion-range>
+        </div>
+      </ion-label>
+
+
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="ios-arrow-forward"></ion-icon>
+      <ion-label>
+        <strong> Type </strong>
+        <br /> <span style="font-size: 14px"> View All </span>
+      </ion-label>
+    </ion-item>
+    <ion-item lines="no">
+      <ion-label>
+        <strong> Bedrooms </strong>
+        <div>
+          <div class="ll42F _7WB9d XvGG0">
+            <div class="_1GHIC"><label class="_2KjKn _1cN1T">Date Published<input type="checkbox" name="sorting"
+                  value="desc-creation"></label><label class="_2KjKn">Relevance<input type="checkbox" name="sorting"
+                  value="desc-relevance"></label><label class="_2KjKn">Price: Lowest<input type="checkbox"
+                  name="sorting" value="asc-price"></label><label class="_2KjKn">Price: Highest<input type="checkbox"
+                  name="sorting" value="desc-price"></label></div>
+          </div>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-button mode="ios" expand="full"> FILTER </ion-button>
+    </ion-toolbar>
+  </ion-footer>
