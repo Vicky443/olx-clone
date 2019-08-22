@@ -5,12 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FilterPage } from './filter.page';
+import { MyadsPage } from './myads.page';
+import { PopupMenuComponent } from '../popup-menu/popup-menu.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: FilterPage
+    component: MyadsPage
   }
 ];
 
@@ -21,7 +22,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [FilterPage],
- 
+  declarations: [MyadsPage, PopupMenuComponent],
+  entryComponents: [ PopupMenuComponent ]
 })
-export class FilterPageModule {}
+export class MyadsPageModule {}

@@ -1,6 +1,6 @@
 <ion-header no-border>
   <ion-toolbar no-border>
-    <ion-buttons slot="start" (click)="dismiss()" >
+    <ion-buttons slot="start" (click)="dismiss()">
       <ion-icon slot="icon-only" name="close"></ion-icon>
     </ion-buttons>
 
@@ -15,7 +15,7 @@
 <ion-content color="pimary">
   <div class="about-header">
     <label class="featured"><span>Featured</span></label>
-    <ion-slides pager="true">
+    <ion-slides pager="true" [options]="sliderProductConfig" class="bg-slider-color">
       <ion-slide>
         <img style="background-size:cover"
           src="https://apollo-singapore.akamaized.net/v1/files/8vae5j4ac0241-IN/image;s=1080x1080">
@@ -34,12 +34,14 @@
   <div class="about-info">
     <ion-card fullscreen class="ion-card-cust">
       <ion-card-header>
-        <ion-card-title>{{ 1200 | currency : 'INR' }} <span style="float: right">
+        <ion-card-title>{{ 1200 | currency : 'INR' }}
+           <span style="float: right">
             <ion-buttons slot="end">
               <ion-icon slot="icon-only" style="font-size: 25px;" name="heart" small></ion-icon>
             </ion-buttons>
-          </span> </ion-card-title>
-        <ion-card-subtitle style="color: #2f5559"> Maruti Sizuki Swift Dzire VDI, 2012, Diesel</ion-card-subtitle>
+          </span>
+         </ion-card-title>
+        <ion-card-subtitle style="color: #000"> Maruti Sizuki Swift Dzire VDI, 2012, Diesel</ion-card-subtitle>
         <ion-card-subtitle> 2014 - 71000 Km</ion-card-subtitle>
         <ion-card-subtitle style="font-size: 10px;">
           <span>
@@ -113,6 +115,7 @@
     <ion-card class="ion-card-cust">
       <ion-list lines="none">
         <ion-item button>
+          <ion-icon slot="end" name="ios-arrow-forward"></ion-icon>
           <ion-avatar slot="start" class="item-avatar">
             <img src="assets/img/avatar/avatar.svg">
           </ion-avatar>
@@ -125,14 +128,64 @@
       </ion-list>
     </ion-card>
 
+
+    <ion-card class="ion-card-cust">
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label>
+            <strong> APP ID : 1523995 </strong>
+          </ion-label>
+          <ion-label slot="end">
+            <p> <a href="#" class="view-profile"> REPORT THIS ADD </a> </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+
+    <ion-card class="ion-card-cust">
+      <ion-card-header>
+        <ion-card-title>
+          Add Posted at
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img
+          src="https://maps.googleapis.com/maps/api/staticmap?center=19.22%2C73.087&language=en&size=640x256&zoom=15&scale=1&channel=olx-latam-ar-web-dev&key=AIzaSyAChxbDof4fywIkC6U-7MCgXBpUp4t2DiA&signature=NXmUBCp0zL8X5mGUcwv3UL0_tAI=">
+      </ion-card-content>
+    </ion-card>
     <ion-card class="ion-card-cust">
       <ion-card-header>
         <ion-card-title>
           Related Ads
         </ion-card-title>
       </ion-card-header>
-      <ion-card-content>
-
+      <ion-card-content no-padding>
+        <ion-slides [options]="sliderConfig">
+          <ion-slide *ngFor="let product of cat">
+            <div>
+              <ion-card no-border class="card-slider">
+                <img src="assets/img/products/p4.jpg" alt="">
+                <div class="heart-btn">
+                  <ion-buttons>
+                    <ion-icon slot="icon-only" name="heart"></ion-icon>
+                  </ion-buttons>
+                </div>
+                <ion-card-content no-padding>
+                  <div class="item-details">
+                    <span class="item-price"> {{ 1200 | currency:'INR':true:'1.2-2'}} </span>
+                    <span class="item-title">Vivo y 55l h</span>
+                    <div class="item-location-flex">
+                      <span class="item-location">Samudrapur</span>
+                      <span class="item-time-line">
+                        <span> 2 days</span>
+                      </span>
+                    </div>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </div>
+          </ion-slide>
+        </ion-slides>
       </ion-card-content>
     </ion-card>
 

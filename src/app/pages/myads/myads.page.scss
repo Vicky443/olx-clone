@@ -1,0 +1,276 @@
+.card-main {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(59, 234, 253, 0.2), 1px 3px 0 rgba(0, 47, 52, .2);
+  color: #002f34;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  position: relative;
+  text-decoration: none;
+}
+
+ion-card {
+  text-decoration: none;
+  background: #fff;
+  box-shadow: 0 !important;
+  -webkit-box-shadow: none !important;
+  padding: 2px;
+}
+
+
+.border-redius {
+  background-color: #23e5d8;
+}
+
+.border-redius {
+  border-radius: 4px 0 0 4px;
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  z-index: 99;
+}
+
+
+
+
+
+.card-main .card-content {
+  margin: 0 12px 0 16px;
+}
+
+.card-main .card-content .card-t1 {
+  padding: 12px 0 12px;
+  display: flex;
+  min-height: 84px;
+  width: 100%;
+}
+
+.card-main .card-content .margin-8 {
+  margin-bottom: 8px;
+}
+
+
+
+.card-main .card-content .card-t1 .card-t2 .card-t3 {
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.img-size {
+  height: 76px;
+  width: 76px;
+}
+
+.card-main .card-content .card-t1 .card-p1 .card-p2 {
+  padding-right: 16px;
+}
+
+.card-main .card-content .card-t1 .card-p1 {
+  width: 100%;
+  position: relative;
+}
+
+.card-p3 {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  width: 200px;
+}
+
+.card-p5 {
+  line-height: 24px;
+}
+
+
+.card-d1 {
+  height: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-d1 div:not(:last-child) {
+  border-right: 1px solid #002f34;
+  height: 16px;
+  padding-right: 8px;
+}
+
+.card-d2 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.card-d1 div:not(:first-child) {
+  padding-left: 8px;
+}
+
+.card-d2 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.card-main .card-content .foot-1 {
+  padding: 8px 0 0;
+  border-top: 1px solid rgba(0, 47, 52, .2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+}
+
+.foot-3 {
+  border-radius: 10px;
+  color: #fff;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 10px;
+  font-weight: 700;
+  justify-content: center;
+  max-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 92px;
+  height: 20px;
+}
+
+.foot-3.foot-4 {
+  background-color: #23e5d8;
+  color: #002f34;
+}
+
+.card-p3 .card-p4 {
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.foot-7 {
+  align-self: flex-end;
+
+}
+
+.foot-8.foot-10 {
+  font-size: 16px;
+  height: 48px;
+}
+
+.foot-7>button {
+  padding: 0 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: none;
+  background: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 12px;
+  position: relative;
+  overflow: hidden;
+  line-height: normal;
+  text-decoration: none;
+  color: #4c0949;
+}
+
+
+
+
+
+.product-card {
+  position: relative;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid rgba(0, 47, 52, .2);
+  overflow: hidden;
+  box-shadow: 0 !important;
+  -webkit-box-shadow: none !important;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  padding: 8px;
+}
+
+.item-price {
+  font-weight: 700;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #002f34;
+  font-size: 20px;
+}
+
+.item-title {
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+}
+
+.item-location-flex {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: rgba(0, 47, 52, .64);
+  font-size: 10px;
+}
+
+
+.item-time-line {
+  text-transform: uppercase;
+  margin-left: auto;
+  color: rgba(0, 47, 52, .64);
+  font-size: 10px;
+}
+
+.head-label {
+  font-size: 18px;
+}
+
+
+
+.featured {
+  -webkit-box-align: center;
+  align-items: center;
+  background: #fff500;
+  color: #002f34;
+  display: -webkit-box;
+  display: flex;
+  font-size: 9px;
+  font-weight: 700;
+  height: 18px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 10px 0px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 75px;
+  z-index: 999;
+}
+
+.heart-btn {
+  position: absolute;
+  z-index: 8;
+  top: 6px;
+  right: 8px;
+}

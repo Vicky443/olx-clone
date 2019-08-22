@@ -1,9 +1,14 @@
-.swiper-slide img {
-  max-width: 80% !important;
-  max-height: 80% !important;
-}
+// .swiper-slide img {
+//   max-width: 80% !important;
+//   max-height: 80% !important;
+// }
 
 ion-content {
+  background-color: #f7f8f9;
+}
+
+
+.bg-slider-color {
   background-color: #fbfbfb;
 }
 
@@ -36,8 +41,8 @@ ion-content {
 .item-avatar {
   width: 100% !important;
   height: 100% !important;
-  max-width: 70px !important; //any size
-  max-height: 70px !important; //any size 
+  max-width: 65px !important; //any size
+  max-height: 65px !important; //any size 
 }
 
 .cust-ion-card {
@@ -96,6 +101,76 @@ ion-content {
 }
 
 .page-header {
-    position: fixed;
-    z-index: 999;
-  }
+  position: fixed;
+  z-index: 999;
+}
+
+
+.card-slider {
+  position: relative;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid rgba(0, 47, 52, .2);
+  overflow: hidden;
+  box-shadow: 0 !important;
+  -webkit-box-shadow: none !important;
+
+}
+
+
+
+.heart-btn {
+  position: absolute;
+  z-index: 8;
+  top: 6px;
+  right: 8px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  padding: 8px;
+}
+
+.item-price {
+  font-weight: 700;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #002f34;
+  font-size: 20px;
+  display: flex;
+}
+
+
+.item-title {
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  display: flex;
+}
+
+.item-location-flex {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: rgba(0, 47, 52, .64);
+  font-size: 10px;
+}
+
+.item-time-line {
+  text-transform: uppercase;
+  margin-left: auto;
+  color: rgba(0, 47, 52, .64);
+  font-size: 10px;
+}
