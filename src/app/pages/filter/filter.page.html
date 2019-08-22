@@ -16,7 +16,7 @@
 
 <ion-content fullscreen>
   <ion-list>
-    <ion-item button> 
+    <ion-item button  (click)="openCategoriesModel()"  > 
       <ion-icon slot="end" name="ios-arrow-forward"></ion-icon>
       <ion-label>
         <strong> Categories </strong>
@@ -72,12 +72,13 @@
       <ion-label>
         <strong> Bedrooms </strong>
         <div>
-          <div class="ll42F _7WB9d XvGG0">
-            <div class="_1GHIC"><label class="_2KjKn _1cN1T">Date Published<input type="checkbox" name="sorting"
-                  value="desc-creation"></label><label class="_2KjKn">Relevance<input type="checkbox" name="sorting"
-                  value="desc-relevance"></label><label class="_2KjKn">Price: Lowest<input type="checkbox"
-                  name="sorting" value="asc-price"></label><label class="_2KjKn">Price: Highest<input type="checkbox"
-                  name="sorting" value="desc-price"></label></div>
+          <div class="loop-item loop-item-1 loop-item-2">
+            <div class="loop-main">
+              <label class="loop-box loop-box-active">Date Published<input type="checkbox" name="sorting"></label>
+              <label class="loop-box">Relevance<input type="checkbox" name="sorting" ></label>
+              <label class="loop-box">Price: Lowest<input type="checkbox" name="sorting" ></label>
+              <label class="loop-box">Price: Highest<input type="checkbox"   name="sorting" ></label>
+            </div>
           </div>
         </div>
       </ion-label>

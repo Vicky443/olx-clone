@@ -81,6 +81,66 @@
       </div>
     </ion-card>
 
+
+    <ion-card no-border>
+      <div class="card-main">
+        <span class="border-redius"></span>
+        <ion-card-header style="padding: 7px; background-color: #ebeeef;" no-padding>
+          <ion-card-subtitle>
+            <span style="font-size: 11px; padding-left: 12px;"> FROM <strong> Aug 21, 19 </strong> TO <strong> Sep 20,
+                19 </strong> </span>
+            <span style="float: right">
+              <ion-buttons slot="end" (click)="presentPopover( $event )" color="primary">
+                <ion-icon slot="icon-only" name="ios-more"></ion-icon>
+              </ion-buttons>
+            </span>
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content no-padding>
+          <div class="card-content">
+            <div class="card-t1">
+              <div class="card-t2">
+                <div class="card-t3">
+                  <img class="img-size"
+                    src="https://apollo-singapore.akamaized.net:443/v1/files/kieiaszlgi5w1-IN/image;s=300x0" alt="">
+                </div>
+              </div>
+              <div class="card-p1">
+                <div class="card-p2">
+                  <div class="card-p3">
+                    <span class="card-p4">Apple IPad</span></div>
+                  <span class="card-p5">₹ 35,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="margin-8">
+              <div class="card-d1">
+                <div class="card-d2">
+                  <ion-buttons slot="end">
+                    <ion-icon slot="icon-only" style="font-size: 20px;" name="eye" small></ion-icon>
+                  </ion-buttons>
+                  <span class="card-d3">Views:</span><span>0</span>
+                </div>
+                <div class="card-d2" data-aut-id="like-stat">
+                  <ion-buttons slot="end">
+                    <ion-icon slot="icon-only" style="font-size: 20px;" name="heart" small></ion-icon>
+                  </ion-buttons>
+                  <span class="card-d3">Likes:</span><span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="foot-1">
+              <div class="foot-2"><label class="foot-3 foot-4">Active</label></div>
+              <div class="foot-5">
+                <div class="foot-6"><span>This ad is currently live</span></div>
+              </div>
+              <div class="foot-7">
+                <button type="button" class="foot-8 foot-9 foot-10"><span>Sell Faster Now</span></button></div>
+            </div>
+          </div>
+        </ion-card-content>
+      </div>
+    </ion-card>
   </div>
 
   <div *ngIf="segment == 'favorites'" padding>

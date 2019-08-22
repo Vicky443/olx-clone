@@ -1,9 +1,9 @@
-.ll42F .XvGG0 ._1GHIC {
+.loop-item .loop-item-2 .loop-main {
   position: relative;
   max-width: calc(100vw - 32px);
 }
 
-.ll42F ._1GHIC {
+.loop-item .loop-main {
   display: flex;
   padding: 1px;
 }
@@ -14,34 +14,51 @@
   flex: 1;
 }
 
-.ll42F {
+.loop-item {
   min-height: 48px;
 }
 
-.ll42F ._7WB9d ._1GHIC {
+.loop-item .loop-item-1 .loop-main {
   width: 100%;
   flex-wrap: nowrap;
   overflow-x: auto;
   position: absolute;
 }
 
-.ll42F ._2KjKn ._1cN1T {
-  border: 1px solid #2a65ea;
-  outline: 1px solid #2a65ea;
-  background: #ebf2ff;
-  color: #2a65ea;
+.loop-item .loop-box .loop-box-active {
+  border: 1px solid #2a65ea !important;
+  outline: 1px solid #2a65ea  !important;;
+  background: #ebf2ff  !important;
+  color: #2a65ea  !important;
 }
 
-.ll42F ._7WB9d ._1GHIC ._2KjKn {
+.loop-item.loop-item-2 .loop-main {
+  position: relative;
+  max-width: calc(100vw - 32px);
+}
+
+.loop-item.loop-item-1 .loop-main {
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  position: absolute;
+}
+
+.loop-item .loop-main {
+  display: flex;
+  padding: 1px;
+}
+
+.loop-item .loop-item-1 .loop-main .loop-box {
   flex: 0 0 auto;
 }
 
-.ll42F .XvGG0 ._1GHIC ._2KjKn {
+.loop-item .loop-item-2 .loop-main .loop-box {
   width: 100px;
   padding: 16px 8px;
 }
 
-.ll42F ._2KjKn {
+.loop-item .loop-box {
   min-height: 48px;
   border: 1px solid rgba(0, 47, 52, .64);
   display: flex;
@@ -57,7 +74,7 @@
   transition-timing-function: cubic-bezier(0, 1, .5, 1);
 }
 
-.ll42F ._2KjKn input {
+.loop-item .loop-box input {
   display: none;
 }
 

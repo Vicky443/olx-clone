@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { CategoriesPage } from '../categories/categories.page';
 
 @Component({
-  selector: 'filter',
-  templateUrl: './filter.page.html',
-  styleUrls: ['./filter.page.scss'],
+  selector: 'categories',
+  templateUrl: './categories.page.html',
+  styleUrls: ['./categories.page.scss'],
 })
-export class FilterPage {
+export class CategoriesPage {
 
   constructor(private modalCtrl: ModalController) { }
 
@@ -18,12 +17,4 @@ export class FilterPage {
       'dismissed': true
     });
   }
-
-  async openCategoriesModel() {
-    const modal = await this.modalCtrl.create({
-      component: CategoriesPage
-    });
-    return await modal.present();
-  }
-
 }
