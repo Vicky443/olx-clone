@@ -1,4 +1,4 @@
-# Ionic Angular Conference Application
+<!-- # Ionic Angular Conference Application
 
 This application is purely a kitchen-sink demo of the Ionic Framework and Angular.
 
@@ -61,4 +61,4 @@ All app preview screenshots were taken by running `ionic serve --lab` on a retin
 
 ### iOS
 
-1. Run `ionic cordova run ios --prod`
+1. Run `ionic cordova run ios --prod` -->
