@@ -9,6 +9,7 @@ import { FilterPage } from '../filter/filter.page';
 import { ProductDetailsPage } from '../product-details/product-details.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { CategoriesPage } from '../categories/categories.page';
+import { BrandDetailsPage } from '../brand-details/brand-details.page';
 
 
 
@@ -19,9 +20,9 @@ import { CategoriesPage } from '../categories/categories.page';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage , FilterPage, ProductDetailsPage, CategoriesPage],
+  declarations: [HomePage , FilterPage, ProductDetailsPage, CategoriesPage, BrandDetailsPage],
   entryComponents: [
-    FilterPage , ProductDetailsPage , HomePage , CategoriesPage
+    FilterPage , ProductDetailsPage , HomePage , CategoriesPage, BrandDetailsPage
   ]
 })
 export class HomePageModule {}

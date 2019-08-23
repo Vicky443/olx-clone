@@ -1,0 +1,75 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" (click)="dismiss()" name="arrow-back"></ion-icon>
+    </ion-buttons>
+    <ion-title>INCLUDE SOME DETAILS </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Brand <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <div class="break-item">  <div class="error-div"> Brand is mandatory. Please complete the required field.  </div>   </div>
+
+
+
+    <ion-item>
+      <ion-label position="stacked">Year <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="number" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    <div class="break-item">  <div class="error-div"> Year has a minimum value of 1900 .  <span style="float: right; color: #adadad">  0 / 400 </span>  </div>    </div>
+
+
+    <ion-item>
+      <ion-input required type="text" placeholder="Fuel" ></ion-input>
+    </ion-item>
+    <div class="break-item">  </div>
+
+
+  
+    <ion-item>
+      <ion-label position="stacked">KM Driven <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    <div class="break-item">  <div class="error-div"> <span>  KM Driven is mendotory. Please complete the required field.  </span>   </div>   </div>
+
+
+    <ion-item>
+      <ion-label position="stacked">Add Title <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    <div class="break-item">  <div class="error-div"> A Minimum lenght of 10 char is required. Please edit the field  </div>    </div>
+
+
+
+    
+    <ion-item>
+      <ion-label position="stacked"> Describe what you are selling <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+    <div class="break-item"> <div style="color: #adadad ;"> * Required Fields </div>   </div>
+
+
+
+  </ion-list>
+
+</ion-content>
+
+
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button mode="ios" expand="full"> NEXT  </ion-button>
+  </ion-toolbar>
+</ion-footer>

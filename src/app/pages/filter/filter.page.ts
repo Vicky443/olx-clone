@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { CategoriesPage } from '../categories/categories.page';
+import { BrandDetailsPage } from '../brand-details/brand-details.page';
 
 @Component({
   selector: 'filter',
@@ -22,6 +23,13 @@ export class FilterPage {
   async openCategoriesModel() {
     const modal = await this.modalCtrl.create({
       component: CategoriesPage
+    });
+    return await modal.present();
+  }
+
+  async openBrandPopup() {
+    const modal = await this.modalCtrl.create({
+      component: BrandDetailsPage
     });
     return await modal.present();
   }
